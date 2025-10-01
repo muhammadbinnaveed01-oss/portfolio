@@ -250,3 +250,7 @@ animation: none;
 .animate__animated.animate__slideInLeft:hover{
     animation: none;
 }
+#Doughnut{
+  width:  400px !important;
+  height:  400px !important;
+}
