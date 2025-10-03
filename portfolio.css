@@ -1,7 +1,7 @@
 .navbar{
     border: 3px solid black;
-    border-radius: 25px;
-    background-color: antiquewhite;
+    border-radius: 1px;
+    background-color: rgb(24, 14, 2);
     margin: 2px;
 }
 
@@ -10,7 +10,7 @@
     padding: 5px;
 }
 .navbar-brand :hover {
-    background-color: rgb(228, 192, 192);
+    background-color: rgb(206, 42, 42);
     color: rgb(2, 1, 0);
     border: 1px solid rgb(6, 1, 1);
     border-radius: 15px;
@@ -22,8 +22,8 @@
 .hero-section{
     width: auto;
     display: flex;
-    flex-flow: column  wrap;
-    height: 500px;
+    flex-flow: row  wrap;
+    height: auto;
     border: 4px double black;
     border-radius: 10px;
     margin: 3px;
@@ -71,18 +71,18 @@
     text-align: right;
 }
 button{
-    background-color: #fae5e5;
+    background-color: #efdddd;
     padding-top: 5px;
     margin-top: 20px;
-    color: rgb(28, 2, 2);
+    color: rgb(243, 239, 239);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border: 3px solid #200303 ;
-    box-shadow: 2px 2px 10px #e9e6e6;
+    box-shadow: 2px 2px 10px #f8f9f9;
     border-radius: 25px;
 }
 button:hover{
-    color: rgb(253, 251, 251);
-    background-color: rgb(254, 12, 12);
+    color: rgb(18, 0, 0);
+    background-color: rgb(54, 236, 8);
     border: 2px solid black;
 }
 
@@ -253,4 +253,100 @@ animation: none;
 #Doughnut{
   width:  400px !important;
   height:  400px !important;
+}
+@media (max-width: 576px)
+
+{
+  .hero-section{
+  background-color: #0b1220;
+  color: rgb(30, 3, 3);
+  animation: none;
+}
+.hero-column-1-innertext-1{
+  background-color: rgba(252, 13, 0, 0.5);
+}
+.hero-column-2{
+  animation: none;
+}
+.portfolio-img{
+  border-radius: 0px;
+  text-align: center;
+  height: 250px;
+  z-index: 10px;
+  box-shadow:8px 8px 2px  #020f1b;
+}
+.aboutme-container{
+  display: block;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.aboutme-container-1{
+  height: auto;
+  flex-flow: row wrap;
+    align-content: center;
+}
+.aboutmeinfo{
+  background-color: rgb(20, 2, 2);
+  width: 100%;
+
+}
+.json-box{
+background-color: green;
+padding: 0;
+margin: 0;
+width: 100%;
+  align-content: center;
+}
+.Discription {
+  align-content: center;
+  background-color: red;
+  color: #e6eef8;
+  font-weight: bolder;
+  text-align: center;
+  box-sizing: 8px;
+  padding: 0px;
+  width: auto;
+  height: 500px;
+}
+
+
+  .hero-section h5 {
+    font-size: 1.2rem;
+  }
+  .hero-section p {
+    font-size: 0.9rem;
+  }
+  .myskill i {
+    font-size: 1.5rem;
+  }
+}
+
+.color-border {
+  border: 5px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+  animation: borderMove 5s linear infinite;
+}
+
+@keyframes borderMove {
+  0% {
+    border-image-source: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+  }
+  100% {
+    border-image-source: linear-gradient(270deg, violet, indigo, blue, green, yellow, orange, red);
+  }
+}
+.glow-border {
+  border: 3px solid red;
+  animation: glow 3s infinite;
+}
+
+@keyframes glow {
+  0%   { border-color: red; }
+  25%  { border-color: orange; }
+  50%  { border-color: green; }
+  75%  { border-color: blue; }
+  100% { border-color: red; }
 }
