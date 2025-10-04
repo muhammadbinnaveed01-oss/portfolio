@@ -1,3 +1,7 @@
+body{
+  background-color: #02335d;
+  color: #faf2f2;
+}
 .navbar{
     border: 3px solid black;
     border-radius: 1px;
@@ -48,6 +52,7 @@
 
 }
 .hero-column-1-innertext-1{
+
  background-color: rgb(241, 236, 236);
  text-shadow: 3px 2px 6px rgb(104, 92, 240);
  border: 4px solid black;
@@ -257,16 +262,26 @@ animation: none;
 @media (max-width: 576px)
 
 {
+  .navbar{
+    width: 100%;
+  }
   .hero-section{
+     
   background-color: #0b1220;
   color: rgb(30, 3, 3);
+
   animation: none;
 }
 .hero-column-1-innertext-1{
+  width: 50px;
+  padding: 0px;
+  margin: 0px;
   background-color: rgba(252, 13, 0, 0.5);
+
 }
 .hero-column-2{
   animation: none;
+
 }
 .portfolio-img{
   border-radius: 0px;
@@ -281,6 +296,7 @@ animation: none;
     padding: 0;
     margin: 0;
 }
+
 .aboutme-container-1{
   height: auto;
   flex-flow: row wrap;
@@ -301,7 +317,7 @@ width: 100%;
 .Discription {
   align-content: center;
   background-color: red;
-  color: #e6eef8;
+  color: #000d1c;
   font-weight: bolder;
   text-align: center;
   box-sizing: 8px;
