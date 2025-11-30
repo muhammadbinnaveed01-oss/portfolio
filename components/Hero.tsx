@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
             <div className="relative group perspective-1000">
               <div className="relative w-full max-w-md aspect-[4/5] rounded-3xl overflow-hidden border border-white/20 shadow-2xl transform transition-transform duration-500 group-hover:rotate-y-0 rotate-y-6">
                 <img 
-                  src="https://picsum.photos/id/1059/800/1000" 
+                  src="./image/muhamad-bin-naveed.jpg" 
                   alt="Muhammad bin Naveed" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
                 />
